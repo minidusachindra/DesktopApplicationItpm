@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95519636-8BAA-4CE4-86F0-CFFE6B6347A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimeTableM</RootNamespace>
+    <AssemblyName>TimeTableM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\HTML\NIBM\Baratha aiya NIBM\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecturer.Designer.cs">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocation.Designer.cs">
+      <DependentUpon>AddLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSession1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSession1.Designer.cs">
+      <DependentUpon>AddSession1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTag.Designer.cs">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTimeSlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTimeSlot.Designer.cs">
+      <DependentUpon>AddTimeSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWorking.Designer.cs">
+      <DependentUpon>AddWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="LecturerDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerDash.Designer.cs">
+      <DependentUpon>LecturerDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationDash.Designer.cs">
+      <DependentUpon>LocationDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLecturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLecturers.Designer.cs">
+      <DependentUpon>ManageLecturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLocation.Designer.cs">
+      <DependentUpon>ManageLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSession.Designer.cs">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudent.Designer.cs">
+      <DependentUpon>ManageStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSubject.Designer.cs">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTag.Designer.cs">
+      <DependentUpon>ManageTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotAvailableTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotAvailableTime.Designer.cs">
+      <DependentUpon>NotAvailableTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionDash.Designer.cs">
+      <DependentUpon>SessionDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDash.Designer.cs">
+      <DependentUpon>StudentDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectDash.Designer.cs">
+      <DependentUpon>SubjectDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagDash.Designer.cs">
+      <DependentUpon>TagDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableVari.cs" />
+    <Compile Include="TimeTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeTbl.Designer.cs">
+      <DependentUpon>TimeTbl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddLecturer.resx">
+      <DependentUpon>AddLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocation.resx">
+      <DependentUpon>AddLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSession1.resx">
+      <DependentUpon>AddSession1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTag.resx">
+      <DependentUpon>AddTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTimeSlot.resx">
+      <DependentUpon>AddTimeSlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWorking.resx">
+      <DependentUpon>AddWorking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerDash.resx">
+      <DependentUpon>LecturerDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDash.resx">
+      <DependentUpon>LocationDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLecturers.resx">
+      <DependentUpon>ManageLecturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLocation.resx">
+      <DependentUpon>ManageLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSession.resx">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudent.resx">
+      <DependentUpon>ManageStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSubject.resx">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTag.resx">
+      <DependentUpon>ManageTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotAvailableTime.resx">
+      <DependentUpon>NotAvailableTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SessionDash.resx">
+      <DependentUpon>SessionDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDash.resx">
+      <DependentUpon>StudentDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectDash.resx">
+      <DependentUpon>SubjectDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagDash.resx">
+      <DependentUpon>TagDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeTbl.resx">
+      <DependentUpon>TimeTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App1.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
